@@ -2,5 +2,5 @@
 
 # Preview Demo
  
-  [https://github.com/mrosama/demopraytime](https://mrosama.github.io/demopraytime/){:target="_blank"}
+  [https://github.com/mrosama/demopraytime](https://mrosama.github.io/demopraytime/)
  
