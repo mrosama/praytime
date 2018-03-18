@@ -1,5 +1,5 @@
 # praytime
 # Demo
  
-  [https://github.com/mrosama/demopraytime](https://github.com/mrosama/demopraytime/index.html)
+  [https://github.com/mrosama/demopraytime](https://mrosama.github.io/demopraytime/)
  
