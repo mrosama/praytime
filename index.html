@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>الطقس - أوقات الصلاة </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+<style>
+
+    .icon-wrap .icon,
+.icon-wrap .wi {
+    font-size: 40px;
+}
+
+.FontNormal {
+    font-family: 'Cairo', sans-serif;
+}
+
+</style>
+
+
+</head>
+<body>
+    
+ 
+        <nav class="navbar navbar-light  " style="background-color:#f8f8f8;border-bottom:1px #ccc solid">
+                <span class="navbar-brand mb-0 h1 FontNormal text-primary"> الطقس - أوقات الصلاة </span>
+              </nav>
+<br>
+    <div class="container-fluid">
+        <div class="row-fluid">
+           
+
+                <div style="margin:5px" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    
+          <!-- begin tap -->
+         
+          <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link FontNormal active" role="tab" data-toggle="tab" href="#home">مصر</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link FontNormal " role="tab" data-toggle="tab" href="#countries"> الدول </a>
+                </li>
+                
+              </ul>
+
+
+              <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                          
+                    <div id="MainLoading" style="display:none">
+                    <img src="./include/images/Ripple-1.6s-84px.gif" /> Please Wait... 
+                    </div>   
+                           
+                         <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                 
+                                           <h1  class="FontNormal text-info"><span id="wname"></span>  الطقس</h1> 
+                                          
+                                        <table style="width:100%"   class="table table-condensed   table-bordered">
+                                                
+                                                        <tr>  
+                                                                <td id="wstatus" class="FontNormal"></td>
+                                                            <td> <img    id="img1" src="" alt="">  </td>
+                                                             
+                                                        
+                                                        </tr>
+                                               <tr></tr> <td class="FontNormal">درجة الحرارة</td> <td><span style="width:50px;" id="temp" class="badge badge-info"></span></td>
+                                              
+                                               
+                                               </tr>
+                       
+                                                </table>
+
+<hr>
+
+<form>
+     
+   
+    <div class="form-group FontNormal">
+            <label for="city"> أختار مدينة</label>
+             <select class="form-control" id="cs" > <option value="Alexandria">Alexandria</option><option value="Aswan">Aswan</option><option value="Asyout">Asyout</option><option value="Bani Sueif">Bani Sueif</option><option value="Beheira">Beheira</option><option value="Cairo">Cairo</option><option value="Daqahlia">Daqahlia</option><option value="Dumiat">Dumiat</option><option value="El Bahr El Ahmar">El Bahr El Ahmar</option><option value="El Ismailia">El Ismailia</option><option value="El Suez">El Suez</option><option value="El Wadi El Gedeed">El Wadi El Gedeed</option><option value="Fayoum">Fayoum</option><option value="Gharbia">Gharbia</option><option value="Giza">Giza</option><option value="Helwan">Helwan</option><option value="Kafr El Sheikh">Kafr El Sheikh</option><option value="Luxor">Luxor</option><option value="Matrouh">Matrouh</option><option value="Menia">Menia</option><option value="Menofia">Menofia</option><option value="North Sinai">North Sinai</option><option value="Port Said">Port Said</option><option value="Qalubia">Qalubia</option><option value="Qena">Qena</option><option value="Sharqia">Sharqia</option><option value="Sixth of October">Sixth of October</option><option value="Sohag">Sohag</option><option value="South Sinai">South Sinai</option></select>
+          </div>
+    
+    <button type="button" id="LocalRequest" class="btn btn-info FontNormal"> عرض أوقات الصلاة - الطقس </button>
+  </form>
+
+
+
+                          
+                              </div>
+
+                              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                               
+                                
+                                    <h1 class="FontNormal text-info"> Egypt ,<span id="cname1"> Cairo </span>    أوقات الصلاة</h1>
+                                        
+                                    <table style="width:100%"   class="table table-condensed   table-bordered">
+                               
+                                <tr><td id="item0">...</td> <td class="alert alert-dark FontNormal"> الفجر</td> </tr>
+                                <tr><td id="item1">...</td> <td class="alert alert-dark FontNormal">الشروق</td> </tr>
+                                <tr><td id="item2">...</td> <td class="alert alert-dark FontNormal"> الظهر</td> </tr>
+                                <tr><td id="item3">...</td> <td class="alert alert-dark FontNormal"> العصر</td> </tr>
+                                <tr><td id="item4">...</td> <td class="alert alert-dark FontNormal"> المغرب</td> </tr>
+                                <tr><td id="item5">...</td> <td class="alert alert-dark FontNormal"> العشاء</td> </tr>
+ 
+                                     </table>
+
+
+
+
+
+
+                                </div>
+
+
+
+                       </div>
+
+                     
+
+ 
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade in" id="countries">
+                        <div id="Loading" style="display:none">
+                            <img src="./include/images/Ripple-1.6s-84px.gif" /> Please Wait... 
+                            </div>  
+                          
+                        <!-- //select  fade in-->
+                        <div class="row">
+                               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+
+                                    <form>
+                                            <div class="form-group FontNormal">
+                                              <label for="Country">أختار الدولة</label>
+                                               <select class="crs-country form-control col-sm-12" data-value="shortcode" data-region-id="one" name="country_selected" id="country_selected"></select>
+                                            </div>
+                                           
+                                            <div class="form-group FontNormal">
+                                                    <label for="city">أختار المدينة</label>
+                                                     <select class="form-control" id="one"   ></select>
+                                                  </div>
+                                            
+                                            <button type="button" id="doRequest"  class="btn btn-default FontNormal"> عرض أوقات الصلاة - الطقس </button>
+                                          </form>
+
+                               </div>
+                               <div   class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                   <div id="result" style="display:none"> 
+
+                                    <h1  class="FontNormal text-info"><span id="Cwname"></span>  الطقس</h1> 
+                                          
+                                    <table style="width:100%"   class="table table-condensed   table-bordered">
+                                            
+                                                    <tr>  
+                                                            <td id="Cwstatus" class="FontNormal"></td>
+                                                        <td> <img    id="Cimg1" src="" alt="">  </td>
+                                                         
+                                                    
+                                                    </tr>
+                                           <tr></tr> <td class="FontNormal">درجة الحرارة</td> <td><span style="width:50px;" id="Ctemp" class="badge badge-info"></span></td>
+                                          
+                                           
+                                           </tr>
+                   
+                                            </table>
+
+
+
+
+                                 <hr> 
+
+
+                             
+                                 <h1 class="FontNormal text-info">     أوقات الصلاة</h1>
+                                        
+                                 <table style="width:100%"   class="table table-condensed   table-bordered">
+                            
+                             <tr><td id="Citem0">...</td> <td class="alert alert-dark FontNormal"> الفجر</td> </tr>
+                             <tr><td id="Citem1">...</td> <td class="alert alert-dark FontNormal">الشروق</td> </tr>
+                             <tr><td id="Citem2">...</td> <td class="alert alert-dark FontNormal"> الظهر</td> </tr>
+                             <tr><td id="Citem3">...</td> <td class="alert alert-dark FontNormal"> العصر</td> </tr>
+                             <tr><td id="Citem4">...</td> <td class="alert alert-dark FontNormal"> المغرب</td> </tr>
+                             <tr><td id="Citem5">...</td> <td class="alert alert-dark FontNormal"> العشاء</td> </tr>
+
+                                  </table>
+
+                                 </div>
+
+
+
+                               </div>
+                        </div>
+                                
+                                  
+
+                                    
+
+
+
+
+                        <!-- //end select -->
+
+                       
+                    </div>
+                  
+                </div>
+
+
+
+
+
+
+
+
+         <!-- end tap -->
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+ 
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="./include/javascript/jquery.crs.min.js"></script>
+<script src="./include/javascript/Config.js"></script>
+<script src="./include/javascript/Api.js"></script>
+   
+
+
+<hr>
+
+<footer>&copy; Copyright 2018 Osama Salama </footer>
+
+
+
+
+</body>
+</html>
